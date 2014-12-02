@@ -34,8 +34,16 @@ public class SatelliteFigure extends GroupFigure {
         //super.basicDisplayBox(origin, corner);
         
         Rectangle r = displayBox();
-        basicMoveBy((int)origin.getX()-r.width/2, (int)origin.getY()-r.height/2);
         
+        int x = (int) origin.getX();
+        int y = (int) origin.getY();
+        
+        //super.basicDisplayBox(new Point(x, y), new Point(x + r.width, y + r.height));
+        basicMoveBy((int)corner.getX()-r.width/2, (int)origin.getY()-r.height/2);
     }
-
+    
+    public boolean canConnect()
+    {
+        return true;
+    }
 }
