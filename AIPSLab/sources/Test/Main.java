@@ -18,5 +18,4 @@ public class Main
         DrawApplication app = new LabApp("AipsLab");
         app.open();
     }
-    
 }

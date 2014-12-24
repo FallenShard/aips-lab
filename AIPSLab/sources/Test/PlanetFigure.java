@@ -54,6 +54,4 @@ public class PlanetFigure extends EllipseFigure
         handles.add(new PlanetHandle(this, RelativeLocator.northEast(), 0, 120));
         return handles;
     }
-    
-    double time = 0.0;
 }
